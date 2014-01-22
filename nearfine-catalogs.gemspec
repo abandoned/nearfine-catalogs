@@ -4,7 +4,7 @@ Gem::Specification.new do |gem|
   gem.authors  = ['Paper Cavalier']
   gem.summary  = %q{Provides Nearfine catalogs}
 
-  gem.files         = Dir.glob('lib/**/*') + %w(LICENSE)
+  gem.files         = Dir.glob('lib/**/*')
   gem.test_files    = Dir.glob('test/**/*')
   gem.require_paths = ['lib']
 
