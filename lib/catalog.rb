@@ -17,7 +17,11 @@ class Catalog
 
     def_delegator :@data, :each
     alias :all :to_a
+
+    def load
+      @data = Doorkeeper.fetch_data.map { |hsh| new(hsh) }
+    end
   end
 
-  @data = Doorkeeper.fetch_data.map { |hsh| new(hsh) }
+  load
 end
