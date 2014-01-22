@@ -3,8 +3,7 @@ require 'catalog'
 
 class TestCatalog < Minitest::Test
   def test_returns_all
-    catalogs = Catalog.all
-    refute_empty catalogs
-    catalogs.each { |catalog| assert_kind_of Catalog, catalog }
+    refute_empty Catalog.all
+    Catalog.all.each { |catalog| assert_kind_of Catalog, catalog }
   end
 end
