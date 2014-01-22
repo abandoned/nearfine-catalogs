@@ -1,3 +1,4 @@
+require 'forwardable'
 require 'virtus'
 require 'doorkeeper'
 require 'marketplace'

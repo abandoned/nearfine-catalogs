@@ -1,4 +1,3 @@
-require 'forwardable'
 require 'json'
 require 'excon'
 require 'signature'
