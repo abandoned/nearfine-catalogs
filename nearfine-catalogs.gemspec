@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name     = 'nearfine-catalogs'
-  gem.version  = '0.1.0'
+  gem.version  = '0.1.1'
   gem.authors  = ['Paper Cavalier']
   gem.summary  = %q{Provides Nearfine catalogs}
 
