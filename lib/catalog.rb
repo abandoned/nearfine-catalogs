@@ -15,13 +15,11 @@ class Catalog
     extend Forwardable
     include Enumerable
 
-    def_delegator :@data, :each
+    def_delegator :data, :each
     alias :all :to_a
 
-    def load
-      @data = Doorkeeper.fetch_data.map { |hsh| new(hsh) }
+    def data
+      @data ||= Doorkeeper.fetch_data.map { |hsh| new(hsh) }
     end
   end
-
-  load
 end
